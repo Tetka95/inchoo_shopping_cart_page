@@ -1,0 +1,457 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.shopping-cart-title {
+    display: table;
+    height: 64px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: #2f2f2f;
+}
+.shopping-cart-title h1 {
+    font-size: 72px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 32px;
+    margin-left: 300px;
+    margin-right: 300px;
+    flex-wrap: wrap;
+}
+
+.shopping-cart-table, .checkout-table {
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.shopping-cart-table thead,
+.shopping-cart-table tbody,
+.checkout-table thead,
+.checkout-table tbody {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.shopping-cart-table td, .checkout-table td {
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/*shopping cart table stil*/
+.shopping-cart-table {
+    display: table;
+    width: 968px;
+    height: 350px;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2f2f2f;
+    border-collapse: collapse;
+}
+.shopping-cart-table thead tr {
+    height: 40px;
+}
+.shopping-cart-table thead tr .item {
+    text-align: left;
+}
+.shopping-cart-table thead tr .qty, .subtotal {
+    text-align: center;
+}
+.shopping-cart-table thead td {
+    border-bottom: 2px solid #f5f5f5;
+}
+.shopping-cart-table tbody {
+    width: 978px;
+    height: 350px;
+}
+.shopping-cart-table tbody tr {
+    width: 978px;
+    height: 145px;
+}
+.shopping-cart-table tbody td {
+    height: 145px;
+    padding: 10px;
+    vertical-align: top;
+}
+.shopping-cart-table tbody tr:last-child td {
+    padding: 50px 0px;
+}
+.products {
+    border-bottom: 3px solid #f5f5f5;
+}
+.product-image {
+    width: 294;
+    height: 145px;
+    align-items: center;
+    padding: 0;
+}
+.product-details {
+    width: 290px;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.product-details .product-name {
+    margin-top: 0;
+}
+.product-details .color {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.product-details .color-info {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.quantity {
+    width: 46px;
+    height: 46px;
+    border: 2px solid #2f2f2f;
+    padding: 0;
+    text-align: center;
+    margin: 0 16px;
+}
+.quantity:focus {
+    outline: 1px solid #e0872c;
+    border: 2px solid #e0872c;
+}
+/*Za WebKit preglednike*/
+.quantity::-webkit-outer-spin-button,
+.quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*Za Firefox*/
+.quantity[type="number"] {
+    -moz-appearance: textfield;
+}
+.product-total {
+    text-align: center;
+    width: 100px;
+}
+.button-imgs {
+    display: flex;
+    width: 71px;
+    justify-content: center;
+    gap: 16px;
+}
+.button-imgs img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+/*stilovi za cart actions*/
+.shopping-cart-table tbody tr:last-child {
+    margin-top: 30px;
+    display: table-row;
+}
+.discount-code {
+    display: flex;
+    text-align: start;
+    width: 294px;
+    border: 1px solid #2f2f2f;
+}
+.discount-code input {
+    width: 211px;
+    padding: 0;
+    border: 1px solid #2f2f2f;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #828282;
+    padding-left: 16px;
+}
+.discount-code input:focus {
+    outline: none;
+}
+.discount-code button {
+    width: 83px;
+    height: 52px;
+    padding: 0;
+    border: 1px solid #2f2f2f;
+    outline: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2f2f2f;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.discount-code button:hover {
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+.update-cart {
+    text-align: end;
+}
+.update-cart-btn {
+    width: 294px;
+    height: 54px;
+    border: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #2f2f2f;
+    cursor: pointer;
+}
+.update-cart-btn:hover {
+    color: #ffffff;
+    background-color: #008421;
+}
+
+/*checkout table stil*/
+.checkout-table {
+    position: relative;
+    width: 294px;
+    height: auto;
+    margin-top: -50px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #2f2f2f;
+    box-sizing: border-box;
+    transition: height 0.3s ease;
+}
+.checkout-table thead {
+    width: 294px;
+    height: 40px;
+}
+.checkout-table thead td {
+    width: 294px;
+    height: 40px;
+}
+.checkout-table thead h1 {
+    width: 294px;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.checkout-table tbody {
+    background-color: #f5f5f5;
+    width: 294px;
+    height: 339px;
+}
+.estimate-shipping {
+    align-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+}
+.estimate-shipping p {
+    margin: 0px 24px;
+}
+.estimate-shipping img {
+    width: 16px;
+    height: 16px;
+}
+.hr1 {
+    width: 100%;
+    border: 1px solid #ffffff;
+    margin: 0;
+}
+.shipping-details {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+#toggle-shipping {
+    border: none;
+    background: none;
+    padding: 15px 0px;
+    margin-left: 72px;
+}
+#toggle-shipping:hover {
+    cursor: pointer;
+    color: #e0872c;
+}
+.checkout-table.expanded {
+    height: 500px;
+}
+.checkout-table.expanded .shipping-details {
+    display: block;
+}
+.checkout-table.expanded .hr1 {
+    display: none;
+}
+#country,
+#state-province,
+#postcode {
+    width: 100%;
+    border: 2px solid #b3b3b3;
+    background-color: #f5f5f5;
+    font-family: "Titillium Web", sans-serif; 
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+#country:focus,
+#state-province:focus,
+#postcode:focus {
+    border: 2px solid #e0872c;
+    outline: none;
+}
+.flat-rate-fixed {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.flat-rate-price {
+    display: inline;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #828282;
+}
+.flat-rate-fixed input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.flat-rate-fixed .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border: 2px solid #2f2f2f;
+    border-radius: 50%;
+}
+.flat-rate-fixed:hover input ~ .checkmark {
+    background-color: #e0872c;
+}
+.flat-rate-fixed input:checked ~ .checkmark {
+    background-color: #ffffff;
+}
+.flat-rate-fixed .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.flat-rate-fixed input:checked ~ .checkmark:after {
+    display: block;
+}
+.flat-rate-fixed .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2f2f2f;
+}
+.total {
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+}
+.total .p-subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.total .p-shipping {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.total .included-rate {
+    display: inline-flex;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: -20px;
+    margin-right: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.total .p-shipping span {
+    display: inline-flex;
+    margin-right: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hr2 {
+    width: 100%;
+    border: 1px solid #ffffff;
+    margin: 0;
+}
+.total .p-grand-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+#total-price, 
+#shipping-cost, 
+#grand-total {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.checkout {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.checkout button {
+    border: none;
+    width: 246px;
+    height: 56px;
+    background-color: #008421;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+.checkout button:hover {
+    background-color: #e0872c;
+}
+.checkout-multiple {
+    display: flex;
+    justify-content: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+.checkout-multiple a {
+    color: #2f2f2f;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.checkout-multiple a:hover {
+    color: #e0872c;
+}

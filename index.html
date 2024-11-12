@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./header-style.css">
+    <link rel="stylesheet" href="./main-style.css">
+    <link rel="stylesheet" href="./footer.style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="customer-service-contact">
+                <p>Contact our Customer Service:</p>
+                <img src="./assets/phone-line-icon.svg">
+                <a href="tel:((800)333-3567)">(800)333-3567</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <img src="./assets/oval.svg">
+                    <li><a href="#">ABOUT US</a></li>
+                    <img src="./assets/oval.svg">
+                    <li><a href="#">CONTACT US</a></li>
+                    <img src="./assets/oval.svg">
+                    <li><a href="#">WHERE TO BUY</a></li>
+                </ul>
+            </div>
+            <div class="message">
+                <p>Promo message area - shipping advantages, special offers...</p>
+            </div>
+            <div class="sign-in">
+                <img src="./assets/user-icon.svg" alt="sign in icon"><a href="#">SIGN IN</a>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="logo-container">
+                <img class="logo-img" src="./assets/inchoo-logo.svg" alt="inchoo-logo">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <p class="slash">/</p><a href="#"><span class="text">SOFT TOP PRODUCTS</span></a>
+                    </li>
+                    <li>
+                        <p class="slash">/</p><a href="#"><span class="text">JEEP ACCESSORIES</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-nav-functions">
+                <div class="search-bar">
+                    <input class="search-bar-input" type="text" placeholder="Search entire store here...">
+                    <button type="submit"><img src="./assets/search-icon.svg" alt="pretraži" width="16px" height="16px"></button>
+                </div>
+                <div class="my-cart-btn">
+                    <a href="">
+                        <img class="cart-img" src="./assets/shopping-cart.svg">
+                        MY CART
+                        <img class="arrow" src="./assets/arrow.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="shopping-cart-title">
+            <h1>SHOPPING CART</h1>
+        </div>
+        <div class="main-container">
+            <table class="shopping-cart-table">
+                <thead>
+                    <tr>
+                        <td class="item">Item</td>
+                        <td><!--prazno--></td>
+                        <td class="qty">Qty</td>
+                        <td class="subtotal">SUBTOTAL</td>
+                        <td><!--prazno--></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="products">
+                        <td>
+                            <div class="product-image">
+                                <img src="./assets/item.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-details">
+                                <p class="product-name">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                                <p class="color">Color: <span class="color-info">Black Denim</span></p>
+                            </div>
+                        </td>
+                        <td>
+                            <input class="quantity" type="number" value="1">
+                        </td>
+                        <td class="product-total" data-price="149.99">149.99 €</td>
+                        <td>
+                            <div class="button-imgs">
+                                <img src="./assets/edit-button.svg" alt="edit cart item">
+                                <img src="./assets/delete-button.svg" alt="delete from cart">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="products">
+                        <td>
+                            <div class="product-image">
+                                <img src="./assets/item.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-details">
+                                <p class="product-name">Flip Top™ PREMIUM - Complete Replacement Soft Top, Jeep 1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                                <p class="color">Color: <span class="color-info">Black Denim, MATT</span></p>
+                            </div>
+                        </td>
+                        <td>
+                            <input class="quantity" type="number" value="1">
+                        </td>
+                        <td class="product-total" data-price="249.99">249.99 €</td>
+                        <td>
+                            <div class="button-imgs">
+                                <img src="./assets/edit-button.svg" alt="edit cart item">
+                                <img src="./assets/delete-button.svg" alt="delete from cart">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="cart-actions">
+                        <td>
+                            <div class="discount-code">
+                                <input class="code-input" type="text" placeholder="Enter Discount Code"><button class="apply-btn" type="submit">APPLY</button>
+                            </div>
+                        </td>
+                        <td colspan="4">
+                            <div class="update-cart">
+                                <button class="update-cart-btn" type="submit">UPDATE SHOPPING CART</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="checkout-table">
+                <thead>
+                    <tr>
+                        <td>
+                            <h1>SUMMARY</h1>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="estimate-shipping">
+                                <p>ESTIMATE SHIPPING AND TAX
+                                    <button id="toggle-shipping">
+                                        <img class="plus-icon" src="./assets/plus-icon.svg" alt="+">
+                                    </button>
+                                </p>
+                                <hr class="hr1">
+                            </div>
+                            <div id="shipping-details" class="shipping-details">
+                                <label for="country">Country</label>
+                                <select id="country">
+                                    <option value=""></option>
+                                </select>
+
+                                <label for="state-province">State/Province</label>
+                                <input id="state-province" type="text">
+
+                                <label for="postcode">Zip/Postal Code</label>
+                                <input id="postcode" type="text">
+
+                                <p class="flat-rate">Flat Rate</p>
+                                <label class="flat-rate-fixed">Fixed <p class="flat-rate-price">(5.00€)</p>
+                                    <input type="radio" name="fixed" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="total">
+                                <p class="p-subtotal">SUBTOTAL
+                                    <span id="total-price"></span>
+                                </p>
+                                <p class="p-shipping">
+                                    SHIPPING
+                                    <p class="included-rate">(Flat Rate - Fixed)</p>
+                                    <span id="shipping-cost"></span>
+                                </p>
+                                <hr class="hr2">
+                                <p class="p-grand-total">ORDER TOTAL
+                                    <span id="grand-total"></span>
+                                </p>
+                                    <div class="checkout">
+                                        <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+                                    </div>
+                                    <div class="checkout-multiple">
+                                        <a href="#">CHECKOUT WITH MULTIPLE ADRESSES</a>
+                                    </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">ABOUT US</a></li>/
+                <li><a href="#">CONTACT US</a></li>/
+                <li><a href="#">SEARCH TERMS</a></li>/
+                <li><a href="#">PRIVACY AND COOKIE POLICY</a></li>/
+                <li><a href="#">INSTALLATION VIDEOS</a></li>
+            </ul>
+        </div>
+        <div class="customer-service">
+            <p>Contact our Customer Service:</p>
+            <img src="./assets/phone-line-icon.svg" width="16px" height="16px">
+            <a href="tel:((800)333-3567)">(800)333-3567</a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

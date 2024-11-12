@@ -1,0 +1,219 @@
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*stil za top bar*/
+.top-bar {
+    height: 48px;
+    background-color: #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.customer-service-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-left: 300px;
+    gap: 12px;
+}
+.customer-service-contact a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+.customer-service-contact a:hover {
+    text-decoration: none;
+    color: #e0872c;
+}
+
+.menu {
+    margin-left: 12px;
+}
+.menu ul {
+    display: flex;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+.menu ul li {
+    display: inline;
+}
+.menu a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+.menu a:hover {
+    color: #e0872c;
+}
+
+.message {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f5f5f5;
+    white-space: nowrap;
+}
+
+.sign-in {
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+.sign-in img {
+    width: 16px;
+    height: 16px;
+}
+.sign-in a {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #f5f5f5;
+}
+.sign-in a:hover {
+    color: #e0872c;
+}
+
+/*stil za header navigation*/
+.header-nav {
+    width: 100%;
+    height: 96px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+}
+.logo-container {
+    margin-left: 300px;
+}
+.nav-menu {
+    display: flex;
+    width: 305px;
+    height: 48px;
+}
+.nav-menu ul {
+    display: inline-flex;
+    list-style: none;
+    margin-left: -64px;
+}
+.nav-menu ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+.nav-menu .slash {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 62px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 100;
+    margin: 0px 12px;
+}
+.nav-menu .text {
+    display: inline-flex;
+}
+.nav-menu ul li a {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+.nav-menu .slash:hover + a {
+    color: #e0872c;
+}
+.nav-menu a:hover {
+    color: #e0872c;
+}
+.nav-menu li:hover .slash {
+    color: #e0872c;
+}
+.header-nav-functions {
+    display: flex;
+    justify-content: space-between;
+    width: 840px;
+}
+.search-bar {
+    position: relative;
+    width: 350px;
+    height: 48px;
+}
+.search-bar input {
+    width: 350px;
+    height: 24px;
+    padding: 10px;
+    border: 2px solid #2f2f2f;
+    color: #828282;
+    background-color: #ffffff;
+}
+.search-bar input:focus {
+    border: 2px solid #e0872c;
+    outline: none;
+}
+.search-bar button {
+    position: absolute;
+    right: 0;
+    top: 47%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #ffffff;
+    color: #2f2f2f;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    opacity: 50%;
+}
+.search-bar button:hover {
+    opacity: 100%;
+}
+.my-cart-btn {
+    margin-right: 300px;
+    display: inline-flex;
+    width: 143px;
+    height: 48px;
+    background-color: #008421;
+    color: #f5f5f5;
+    font-size: 18px;
+    align-content: center;
+    justify-content: center;
+}
+.my-cart-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f5f5f5;
+    width: 100%;
+}
+.my-cart-btn a:hover {
+    opacity: 50%;
+}
+.my-cart-btn .cart-img {
+    align-self: center;
+}
+.my-cart-btn .arrow {
+    align-self: center;
+}
