@@ -49,7 +49,7 @@ header {
     display: inline;
 }
 .menu a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #f5f5f5;
     font-family: "Titillium Web", sans-serif;
     font-weight: 700;
@@ -197,7 +197,7 @@ header {
     align-content: center;
     justify-content: center;
 }
-.my-cart-btn a {
+.my-cart-btn a#cart {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -208,7 +208,7 @@ header {
     color: #f5f5f5;
     width: 100%;
 }
-.my-cart-btn a:hover {
+.my-cart-btn a#cart:hover {
     opacity: 50%;
 }
 .my-cart-btn .cart-img {
@@ -216,4 +216,160 @@ header {
 }
 .my-cart-btn .arrow {
     align-self: center;
+}
+
+/*media query za mobilne uređaje*/
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        max-width: 480px;
+        margin: 0;
+        overflow-y: 0;
+    }
+
+    /*top-bar*/
+    .top-bar {
+        width: 100%;
+        height: 32px;
+        display: inline-flex;
+        justify-content: start;
+        margin: 0;
+        padding: 0;
+    }
+    .customer-service-contact {
+        margin: 0px 16px 0px 0px;
+    }
+    .customer-service-contact p {
+        display: none;
+    }
+    .customer-service-contact img {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        padding: 4px 4px;
+    }
+    .customer-service-contact a {
+        display: none;
+    }
+    .menu {
+        height: 24px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu ul {
+        display: flex;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }    
+    .menu ul img {
+        display: none;
+    }
+    .menu ul li {
+        display: inline;
+        position: relative;
+    }
+    .menu ul li::before {
+        content: "•";
+        color: #f5f5f5;
+        font-size: 10px;
+        position: absolute;
+        left: -10px;
+        top: 4px;
+    }
+    .menu li a {
+        font-size: 10px;
+        justify-content: center;
+    }
+    .menu li a:focus {
+        color: #e0872c;
+    }
+    .message p {
+        display: none;
+    }
+    .sign-in {
+        margin-right: 10px;
+    }
+    .sign-in a {
+        align-items: center;
+        font-size: 16px;
+    }
+    .sign-in a:focus {
+        color: #e0872c;
+    }
+    
+    /*stil za header navigation*/
+    .header-nav {
+        width: 100%;
+        height: 72px;
+        box-shadow: none;
+    }
+    .logo-container {
+        display: inline-flex;
+        margin: 0px 16px;
+        gap: 10px;
+    }
+    .logo-container::before {
+        content: "";
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        background-image: url('./assets/menu-icon.svg');
+        background-size: 16px 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .logo-img {
+        width: 99px;
+        height: 33px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .header-nav-functions {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        width: 840px;
+    }
+    .search-bar {
+        width: 40px;
+        height: 40px;
+    }
+    .search-bar input {
+        display: none;
+    }
+    .search-bar button {
+        position: relative;
+        top: 50%;
+        border: none;
+        background-color: #2f2f2f;
+        color: #ffffff;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+    .search-bar button #search {
+        width: 16px;
+        height: 16px;
+        justify-content: center;
+    }
+    .my-cart-btn {
+        margin-right: 16px;
+        width: 40px;
+        height: 40px;
+        background-color: #008421;
+        align-content: center;
+        justify-content: center;
+    }
 }

@@ -15,7 +15,7 @@
         <div class="top-bar">
             <div class="customer-service-contact">
                 <p>Contact our Customer Service:</p>
-                <img src="./assets/phone-line-icon.svg">
+                <img class="call" src="./assets/phone-line-icon.svg">
                 <a href="tel:((800)333-3567)">(800)333-3567</a>
             </div>
             <div class="menu">
@@ -52,10 +52,10 @@
             <div class="header-nav-functions">
                 <div class="search-bar">
                     <input class="search-bar-input" type="text" placeholder="Search entire store here...">
-                    <button type="submit"><img src="./assets/search-icon.svg" alt="pretraži" width="16px" height="16px"></button>
+                    <button type="submit"><img id="search" src="./assets/search-icon.svg" alt="pretraži" width="16px" height="16px"></button>
                 </div>
                 <div class="my-cart-btn">
-                    <a href="">
+                    <a id="cart" href="#">
                         <img class="cart-img" src="./assets/shopping-cart.svg">
                         MY CART
                         <img class="arrow" src="./assets/arrow.svg">
@@ -69,7 +69,7 @@
             <h1>SHOPPING CART</h1>
         </div>
         <div class="main-container">
-            <table class="shopping-cart-table">
+            <table id="shopping-cart-table" class="shopping-cart-table">
                 <thead>
                     <tr>
                         <td class="item">Item</td>
@@ -139,6 +139,80 @@
                         </td>
                     </tr>
                 </tbody>
+            </table>
+            <table id="mobile-shopping-cart-table" class="mobile-shopping-cart-table">
+                <tr>
+                    <td>
+                        <div class="product-image">
+                            <img src="./assets/item.png" alt="product-image">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product-details">
+                            <p class="product-name">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                            <p class="color">Color: <span class="color-info">Black Denim</span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="qty-subtotal-row">
+                    <td class="qty">Qty</td>
+                    <td class="subtotal">SUBTOTAL</td>
+                </tr>
+                <tr class="qty-subtotal-row2">
+                    <td>
+                        <input class="quantity" type="number" value="1">
+                    </td>
+                    <td class="product-total" data-price="249.99">249.99 €</td> 
+                </tr>
+                <tr class="button-imgs-row">
+                    <td colspan="2">
+                        <div class="button-imgs">
+                            <img src="./assets/edit-button.svg" alt="edit cart item">
+                            <img src="./assets/delete-button.svg" alt="delete from cart">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-image">
+                            <img src="./assets/item.png" alt="product-image">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product-details">
+                            <p class="product-name">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                            <p class="color">Color: <span class="color-info">Black Denim</span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="qty-subtotal-row">
+                    <td class="qty">Qty</td>
+                    <td class="subtotal">SUBTOTAL</td>
+                </tr>
+                <tr class="qty-subtotal-row2">
+                    <td>
+                        <input class="quantity" type="number" value="1">
+                    </td>
+                    <td class="product-total" data-price="249.99">249.99 €</td> 
+                </tr>
+                <tr class="button-imgs-row">
+                    <td colspan="2">
+                        <div class="button-imgs">
+                            <img src="./assets/edit-button.svg" alt="edit cart item">
+                            <img src="./assets/delete-button.svg" alt="delete from cart">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="cart-actions-row">
+                    <td class="cart-actions" colspan="2">
+                        <div class="update-cart">
+                            <button class="update-cart-btn" type="submit">UPDATE SHOPPING CART</button>
+                        </div>
+                        <div class="discount-code">
+                                <input class="code-input" type="text" placeholder="Enter Discount Code"><button class="apply-btn" type="submit">APPLY</button>
+                        </div>   
+                    </td>
+                </tr>
             </table>
             <table class="checkout-table">
                 <thead>
