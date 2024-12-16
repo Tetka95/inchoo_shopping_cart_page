@@ -1,6 +1,6 @@
 const select = document.getElementById('country');
 
-    fetch('https://restcountries.com/v3.1/all')
+    fetch('./all.json')
         .then(response => response.json())
         .then(data => {
             data.forEach(country => {
